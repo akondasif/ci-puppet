@@ -2,7 +2,7 @@
 #
 # Wraps the puppetlabs rabbitmq module and installs from our apt repo
 class gds_rabbitmq (
-  $root_password = 'root',
+  $root_password = undef,
 ) {
   include gds_rabbitmq::repo
 
